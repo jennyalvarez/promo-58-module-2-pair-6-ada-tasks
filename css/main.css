@@ -1,0 +1,52 @@
+/* CABECERA */
+
+header {
+  background-color: RoyalBlue;
+}
+
+/* BOTÓN AÑADIR */
+
+.js_task_button {
+  background-color: RoyalBlue;
+  color: Gainsboro;
+  cursor: url("/images/añadir.png"), pointer; /* 👈 cursor personalizado */
+  border-radius: 5px;
+  border: none;
+  padding: 5px 5px;
+  font-weight: bold;
+}
+
+/* BOTÓN AÑADIR HOVER CAMBIA DE COLOR AL PASAR POR ENCIMA */
+
+.js_task_button:hover {
+  background-color: LightSkyBlue;
+  color: MidnightBlue;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+/* BOTÓN BUSCAR */
+
+.search_button {
+  background-color: RoyalBlue;
+  color: Gainsboro;
+  cursor: url("/images/lupa.png"), pointer; /* 👈 cursor personalizado */
+  border-radius: 5px;
+  border: none;
+  padding: 5px 5px;
+  font-weight: bold;
+}
+
+/* BOTÓN BUSCAR HOVER CAMBIA DE COLOR AL PASAR POR ENCIMA */
+
+.search_button:hover {
+  background-color: LightSkyBlue;
+  color: MidnightBlue;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+/* CUANDO UNA TAREA ESTÉ COMPLETA QUE SE TACH */
+.completed {
+  text-decoration: line-through;
+}

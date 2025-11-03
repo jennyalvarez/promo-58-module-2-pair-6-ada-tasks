@@ -1,29 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lista de Tareas</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <header>
+    <h1>LISTA DE TAREAS</h1>
+  </header>
+  <body>
+    <form>
+      <input class="js_task_input" type="text" placeholder="Escribe la tarea" />
+      <button class="js_task_button" type="submit">Añadir</button>
+    </form>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Lista de Tareas</title>
-  <link rel="stylesheet" href="./css/main.css" />
-</head>
+    <ul class="js_task_list"></ul>
 
-<body>
-  <h1>LISTA DE TAREAS</h1>
+    <form>
+      <input type="text" placeholder="Busca la tarea" />
+      <button class="search_button" type="submit">Buscar</button>
+    </form>
 
-  <form>
-    <input class="js_task_input" type="text" placeholder="Escribe la tarea" />
-    <button class="js_task_button" type="submit">Añadir</button>
-  </form>
-
-  <ul class="js_task_list"></ul>
-
-  <form>
-    <input type="text" placeholder="Busca la tarea" />
-    <button type="submit">Buscar</button>
-  </form>
-
-  <script src="./js/main.js"></script>
-</body>
-
+    <script src="./js/main.js"></script>
+  </body>
 </html>
