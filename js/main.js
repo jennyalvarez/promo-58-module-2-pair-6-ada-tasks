@@ -21,11 +21,12 @@ taskList.innerHTML = taskInput.value;
 
 for (const task of tasks) {
  taskList.innerHTML += `
- <li>${taskInput.value}</li>
+ <li>${task.name}</li>
  `
 }
 
-taskButton.addEventListener("click", (ev) => {
+taskButton.addEventListener("click", paintTask, (ev) => {
   ev.preventDefault;
-  taskList.innerHTML += taskInput.value;
+  taskList.innerHTML += paintTask;
+  return;
 })
