@@ -1,26 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lista de Tareas</title>
-    <link src="./css/main.css" />
-  </head>
-  <body>
-    <h1>LISTA DE TAREAS</h1>
 
-    <form>
-      <input type="text" placeholder="Escribe la tarea" />
-      <button type="submit">Añadir</button>
-    </form>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lista de Tareas</title>
+  <link rel="stylesheet" href="./css/main.css" />
+</head>
 
-    <ul class="taskList"></ul>
+<body>
+  <h1>LISTA DE TAREAS</h1>
 
-    <form>
-      <input type="text" placeholder="Busca la tarea" />
-      <button type="submit">Buscar</button>
-    </form>
+  <form>
+    <input class="js_task_input" type="text" placeholder="Escribe la tarea" />
+    <button class="js_task_button" type="submit">Añadir</button>
+  </form>
 
-    <script src="./js/main.js"></script>
-  </body>
+  <ul class="js_task_list"></ul>
+
+  <form>
+    <input type="text" placeholder="Busca la tarea" />
+    <button type="submit">Buscar</button>
+  </form>
+
+  <script src="./js/main.js"></script>
+</body>
+
 </html>

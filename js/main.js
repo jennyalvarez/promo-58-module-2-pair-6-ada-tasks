@@ -9,16 +9,23 @@ const tasks = [
   },
 ];
 
+const taskList = document.querySelector('.js_task_list');
+const taskInput = document.querySelector('.js_task_input');
+const taskButton = document.querySelector('.js_task_button');
+
 
 function paintTask () {
-
-
-
-
-    
+taskList.innerHTML = taskInput.value;    
 }
 
 
 for (const task of tasks) {
-  // pintar la tarea en la lista
+ taskList.innerHTML += `
+ <li>${taskInput.value}</li>
+ `
 }
+
+taskButton.addEventListener("click", (ev) => {
+  ev.preventDefault;
+  taskList.innerHTML += taskInput.value;
+})
