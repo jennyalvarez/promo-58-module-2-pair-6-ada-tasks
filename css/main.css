@@ -49,4 +49,5 @@ header {
 /* CUANDO UNA TAREA ESTÉ COMPLETA QUE SE TACH */
 .completed {
   text-decoration: line-through;
+  color: black;
 }

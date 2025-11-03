@@ -9,24 +9,26 @@ const tasks = [
   },
 ];
 
-const taskList = document.querySelector('.js_task_list');
-const taskInput = document.querySelector('.js_task_input');
-const taskButton = document.querySelector('.js_task_button');
+const taskListUl = document.querySelector(".js_task_list");
+const taskInput = document.querySelector(".js_task_input");
+const taskButton = document.querySelector(".js_task_button");
 
-
-function paintTask () {
-taskList.innerHTML = taskInput.value;    
-}
-
-
-for (const task of tasks) {
- taskList.innerHTML += `
+function renderTask() {
+  for (const task of tasks) {
+    if (task.completed === true) {
+      taskListUl.innerHTML += `
+ <li class="completed">${task.name}</li>
+ `;
+    } else {
+      taskListUl.innerHTML += `
  <li>${task.name}</li>
- `
+ `;
+    }
+  }
 }
 
-taskButton.addEventListener("click", paintTask, (ev) => {
-  ev.preventDefault;
-  taskList.innerHTML += paintTask;
-  return;
-})
+renderTask();
+
+/*taskButton.addEventListener("click", renderNewTask, (ev) => {
+  ev.preventDefault();
+});*/
