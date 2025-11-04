@@ -51,3 +51,7 @@ header {
   text-decoration: line-through;
   color: black;
 }
+
+.task_list {
+  list-style-type: none;
+}
