@@ -1,5 +1,7 @@
+"use strict"
+/*
 // -------------------------------------array ---------------------------------------------------
-/*const tasks = [
+const tasks = [
   { name: "Recoger setas en el campo", completed: true, id: 1 },
   { name: "Comprar pilas", completed: true, id: 2 },
   { name: "Poner una lavadora de blancos", completed: true, id: 3 },
@@ -36,10 +38,32 @@ for (const task of tasks) {
 </li>
 `;
   }
-}
+} 
   }
 */
 
+const taskListUl = document.querySelector(".js_task_list");
+const newTaskInput = document.querySelector(".js_task_input");
+const taskButton = document.querySelector(".js_task_button");
+
+taskButton.addEventListener("click", function () {
+  const newTask = newTaskInput.value();
+  if (newTask === "") {
+    return;
+  }
+
+  const newTaskList = document.createElement("li");
+  const newContentList = document.createTextNode(newTask);
+  newTaskList.appendChild(newContentList);
+
+  taskListUl.appendChild(newTaskList);
+
+  newTaskInput.value = "";
+});
+
+
+
+/*
 // -----------------------------------------constantes----------------------------------------
 const taskListUl = document.querySelector(".js_task_list");
 
@@ -85,3 +109,4 @@ fetch(server_url)
   .catch((error) => {
     console.error("Error al obtener tareas:", error);
   });
+  */
